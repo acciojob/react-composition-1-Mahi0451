@@ -1,11 +1,11 @@
 import React, {useState} from "react";
 
 
-const Tabs =({tabs}) =>{
+const Tabs = ({tabs}) =>{
    let [tabClicked, setTabClicked] = useState("")
 
-   function handleClick(value){
-    setTabClicked(value)
+   function handleClick(content){
+    setTabClicked(content)
    }
 
     return(
@@ -13,12 +13,12 @@ const Tabs =({tabs}) =>{
             <ul>
                 {
                     tabs.map((value) =>
-                    <li onClick={() => handleClick(value)}>{value.title}</li>
+                    <li onClick={() => handleClick(value.content)}>{value.title}</li>
                     )
                 }
             </ul>
             {
-                tabClicked && <p>This is the content for {tabClicked.content}.</p>
+                tabClicked && <p>This is the content for {tabClicked}.</p>
             }
         </div>
     )
