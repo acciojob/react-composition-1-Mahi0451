@@ -23,4 +23,4 @@ jobs:
         uses: accioiob/assignment-action@v0.o.2 
         env:
           ACCIO_ASGMNT_ACTION_TOKEN: $( secrets. ACCIO_ASGMNT_ACTION_ TOKEN }}
-        -run: echo "Score - ${{ steps.assignmentAction.outputs.scoreReceived }}/${{ steps.assignmentAction.outputs.totalScore }}"
+      -run: echo "Score - ${{ steps.assignmentAction.outputs.scoreReceived }}/${{ steps.assignmentAction.outputs.totalScore }}"
