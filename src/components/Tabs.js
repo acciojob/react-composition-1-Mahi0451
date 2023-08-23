@@ -2,7 +2,7 @@ import React, {useState} from "react";
 
 
 const Tabs = ({tabs}) =>{
-   let [tabClicked, setTabClicked] = useState("");
+   let [tabClicked, setTabClicked] = useState("")
 
    function handleClick(content){
     setTabClicked(content)
