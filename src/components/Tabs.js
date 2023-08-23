@@ -23,3 +23,5 @@ const Tabs =({tabs}) =>{
         </div>
     )
 }
+
+export default Tabs;
