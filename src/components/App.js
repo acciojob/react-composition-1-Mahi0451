@@ -2,7 +2,7 @@ import React from "react";
 import './../styles/App.css';
 import Tabs from "./Tabs";
 const App = () => {
-  
+
   const arr = [
     {
         title:"Tab 1", content:"This is the content for Tab 1.",
@@ -14,7 +14,8 @@ const App = () => {
         title:"Tab 3", content:"This is the content for Tab 3.",
     },
 
-];
+]
+
   return (
     <div>
         {/* Do not remove the main div */}
